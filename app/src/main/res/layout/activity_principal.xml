@@ -9,7 +9,6 @@
     android:background="@color/white"
     tools:context=".principal">
 
-    <!-- TextView de Bienvenida -->
     <TextView
         android:id="@+id/textPRINCIPAL"
         android:layout_width="0dp"
@@ -24,10 +23,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- TextView de Especialidades -->
 
-
-    <!-- Botones de especialidades -->
     <Button
         android:id="@+id/SOFWARE"
         android:layout_width="0dp"
@@ -100,7 +96,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/MECA" />
 
-    <!-- Botones inferiores -->
     <Button
         android:id="@+id/FACE"
         android:layout_width="wrap_content"

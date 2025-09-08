@@ -20,7 +20,6 @@ public class principal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
 
-        // Configurar botones con manejo de errores
         try {
             setupButtonWebPage(R.id.SOFWARE, "https://sites.google.com/inti.edu.sv/nuevoingreso/OfertaAcademica/desarrollo_de_software?authuser=0");
             setupButtonWebPage(R.id.TECNIA, "https://sites.google.com/inti.edu.sv/nuevoingreso/OfertaAcademica/sistemas_electricos?authuser=0");

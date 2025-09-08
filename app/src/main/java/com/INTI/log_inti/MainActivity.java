@@ -13,17 +13,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Configurar el botón para ir a la actividad principal
+
         Button botonIngre = findViewById(R.id.boton_INGRE);
         botonIngre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Abrir la actividad principal
                 Intent intent = new Intent(MainActivity.this, principal.class);
                 startActivity(intent);
 
-                // Opcional: cerrar esta actividad para que no se pueda volver atrás
-                // finish();
             }
         });
     }

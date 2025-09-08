@@ -1,41 +1,30 @@
 package com.INTI.log_inti;
 
+import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.VideoView;
-
-import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-
-    Button btn_ingre;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        btn_ingre =findViewById(R.id.boton_INGRE);
-
-        btn_ingre.setOnClickListener(new View.OnClickListener() {
+        // Configurar el botón para ir a la actividad principal
+        Button botonIngre = findViewById(R.id.boton_INGRE);
+        botonIngre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent (MainActivity.this,principal.class);
+                // Abrir la actividad principal
+                Intent intent = new Intent(MainActivity.this, principal.class);
                 startActivity(intent);
+
+                // Opcional: cerrar esta actividad para que no se pueda volver atrás
+                // finish();
             }
         });
-
-
-
-
-
-
     }
 }
